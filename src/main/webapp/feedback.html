@@ -21,6 +21,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="css/tiny-slider.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/feedback.css" rel="stylesheet">
     <title>Furni Free Bootstrap 5 Template for Furniture and Interior Design Websites by Untree.co </title>
 </head>
 
@@ -87,18 +88,12 @@
         <img src="images/rate5.png" alt="Very Satisfied" class="emoji-rate" onclick="selectIcon(this)">
     </div>
     <textarea class="text-feedback" placeholder="Nhập phản hồi của bạn ở đây..."></textarea>
-    <div class="col-lg-12">
-        <div class="image-feedback">
-            <label> Product Image</label>
-            <div class="image-upload">
-                <input type="file">
-                <div class="image-uploads">
-                    <img src="images/upload.svg" alt="img">
-                    <h4>Drag and drop a file to upload</h4>
-                </div>
-            </div>
-        </div>
+    <div class="image-feedback" id="drop-zone">
+        <input type="file" id="file-input">
+        <img id="preview-img" src="images/upload.svg" alt="img" style="width: 100px;">
+        <h4>Drag and drop a file to upload</h4>
     </div>
+    <td><button type="button" class="btn-feedback">Gửi</button></td>
 </div>
 
 <!-- Start Footer Section -->
